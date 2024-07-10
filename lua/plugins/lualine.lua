@@ -1,8 +1,8 @@
 local colors = {
-  bg = "#AC4949",
-  fg1 = "#F1CC5D",
-  fg2 = "#F7DD69",
-  fg3 = "#13C3FB",
+  bg = "#FF79C6",
+  fg1 = "#8DE8FE",
+  fg2 = "#282A36",
+  fg3 = "#282A36",
 }
 
 local status_colours = {

@@ -6,7 +6,14 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
-    require("nvim-tree").setup({})
+    require("nvim-tree").setup({
+      filters = {
+        dofiles = true,
+      },
+      view = {
+        side = "right",
+      },
+    })
     vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", {})
     vim.cmd([[
       :hi NvimTreeWinSeparator  guibg=NONE 
