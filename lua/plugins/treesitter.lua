@@ -3,6 +3,7 @@ return {
   opts = {
     ensure_installed = {
       "html",
+      "php",
       "javascript",
       "json",
       "lua",
@@ -15,6 +16,8 @@ return {
       "vim",
       "yaml",
       "erlang",
+      "elixir",
+      "heex",
     },
   },
 }
