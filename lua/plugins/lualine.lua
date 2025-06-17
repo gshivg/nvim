@@ -35,7 +35,7 @@ return {
     options = {
       icons_enabled = true,
       theme = status_colours,
-      components_separators = "|",
+      component_separators = "|",
       section_separators = "",
     },
   },
