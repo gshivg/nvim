@@ -8,6 +8,8 @@ return {
       -- these are examples, not defaults. Please see the readme
       vim.g.molten_image_provider = "image.nvim"
       vim.g.molten_output_win_max_height = 20
+      vim.g.molten_enter_output_behavior = "open_and_enter"
+      -- Code fence navigation (only registered when molten loads)
     end,
   },
   {
@@ -35,7 +37,7 @@ return {
     opts = {
       lspFeatures = {
         -- NOTE: put whatever languages you want here:
-        languages = { "r", "python", "rust" },
+        languages = { "python" },
         chunks = "all",
         diagnostics = {
           enabled = true,

@@ -13,11 +13,12 @@ vim.keymap.set("n", "<localleader>ip", function()
 end, { desc = "Initialize Molten for python3", silent = true })
 
 vim.keymap.set("n", "<localleader>e", ":MoltenEvaluateOperator<CR>", { desc = "evaluate operator", silent = true })
+
 vim.keymap.set(
   "n",
   "<localleader>os",
   ":noautocmd MoltenEnterOutput<CR>",
-  { desc = "open output window", silent = true }
+  { silent = true, desc = "show/enter output" }
 )
 vim.keymap.set("n", "<localleader>rr", ":MoltenReevaluateCell<CR>", { desc = "re-eval cell", silent = true })
 vim.keymap.set(
@@ -26,8 +27,14 @@ vim.keymap.set(
   ":<C-u>MoltenEvaluateVisual<CR>gv",
   { desc = "execute visual selection", silent = true }
 )
-vim.keymap.set("n", "<localleader>oh", ":MoltenHideOutput<CR>", { desc = "close output window", silent = true })
-vim.keymap.set("n", "<localleader>md", ":MoltenDelete<CR>", { desc = "delete Molten cell", silent = true })
+vim.keymap.set("n", "<localleader>oh", ":MoltenHideOutput<CR>", { silent = true, desc = "hide output" })
+vim.keymap.set("n", "<localleader>rd", ":MoltenDelete<CR>", { silent = true, desc = "molten delete cell" })
+vim.keymap.set(
+  "n",
+  "<localleader>ii",
+  ":MoltenImagePopup<CR>",
+  { silent = true, desc = "open image in default image viewer" }
+)
 
 -- if you work with html outputs:
 vim.keymap.set("n", "<localleader>mx", ":MoltenOpenInBrowser<CR>", { desc = "open output in browser", silent = true })
